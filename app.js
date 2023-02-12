@@ -47,7 +47,10 @@ var params = {
     } else if (shape === 'rectangle') {
       var rectangle = two.makeRectangle(x, y, size, size);
       rectangle.fill = color;
-    }
+    } else if (shape === 'triangle') {
+        var triangle = two.makePolygon(x, y, size, 3);
+        triangle.fill = color;
+      }
   
     two.update();
   
