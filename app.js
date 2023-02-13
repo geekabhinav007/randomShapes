@@ -57,7 +57,7 @@ function drawShape() {
     var rectangle = two.makeRectangle(x, y, size, size);
     rectangle.fill = color;
   } else if (shape === 'triangle') {
-    var triangle = two.makePolygon(x, y, size, 3);
+    var triangle = two.makePolygon(x, y, size, y+x);
     triangle.fill = color;
   }
 
